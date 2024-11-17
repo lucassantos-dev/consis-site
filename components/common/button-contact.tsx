@@ -60,6 +60,7 @@ const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaE
       setIsOpen(false);
     } catch (error) {
       setErrorMessage('Erro ao enviar a mensagem. Tente novamente mais tarde.');
+      console.log(error)
     } finally {
       setIsSubmitting(false);
     }
