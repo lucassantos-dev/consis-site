@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, CheckCircle } from 'lucide-react'
+// import { Button } from "@/components/ui/button"
+// import { ArrowRight, CheckCircle } from 'lucide-react'
 
 export default function MainSection() {
   return (
@@ -39,29 +39,29 @@ export default function MainSection() {
   )
 }
 
-const services = [
-  {
-    title: "Consultoria em TI",
-    description: "Orientação estratégica para otimizar seus processos de tecnologia da informação."
-  },
-  {
-    title: "Desenvolvimento de Software",
-    description: "Criação de soluções personalizadas para atender às necessidades específicas do seu negócio."
-  },
-  {
-    title: "Suporte Técnico",
-    description: "Assistência especializada para manter seus sistemas funcionando sem interrupções."
-  },
-  {
-    title: "Segurança da Informação",
-    description: "Proteção abrangente para seus dados e infraestrutura digital."
-  },
-  {
-    title: "Gestão de Projetos",
-    description: "Planejamento e execução eficiente de projetos de tecnologia."
-  },
-  {
-    title: "Treinamento e Capacitação",
-    description: "Programas de formação para manter sua equipe atualizada com as últimas tecnologias."
-  }
-]
+// const services = [
+//   {
+//     title: "Consultoria em TI",
+//     description: "Orientação estratégica para otimizar seus processos de tecnologia da informação."
+//   },
+//   {
+//     title: "Desenvolvimento de Software",
+//     description: "Criação de soluções personalizadas para atender às necessidades específicas do seu negócio."
+//   },
+//   {
+//     title: "Suporte Técnico",
+//     description: "Assistência especializada para manter seus sistemas funcionando sem interrupções."
+//   },
+//   {
+//     title: "Segurança da Informação",
+//     description: "Proteção abrangente para seus dados e infraestrutura digital."
+//   },
+//   {
+//     title: "Gestão de Projetos",
+//     description: "Planejamento e execução eficiente de projetos de tecnologia."
+//   },
+//   {
+//     title: "Treinamento e Capacitação",
+//     description: "Programas de formação para manter sua equipe atualizada com as últimas tecnologias."
+//   }
+// ]
