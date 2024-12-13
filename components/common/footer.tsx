@@ -54,12 +54,12 @@ export default function Footer() {
                 <Phone className="h-6 w-6 text-white mr-2" />
                 <span className="text-base text-white">+55 (88) 9 9408-7030</span>
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <Mail className="h-6 w-6 text-white mr-2" />
                 <a href="mailto:contato@consisconsultoria.com.br" className="text-base text-white hover:text-white">
                   contato@consisconsultoria.com.br
                 </a>
-              </li>
+              </li> */}
               <li className="flex items-center">
                 <MapPin className="h-6 w-6 text-white mr-2" />
                 <span className="text-base text-white">Juazeiro do Norte, CE</span>

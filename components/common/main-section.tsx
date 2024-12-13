@@ -3,8 +3,8 @@ import { ArrowRight, CheckCircle } from 'lucide-react'
 
 export default function MainSection() {
   return (
-    <section className="bg-gradient-to-b from-white to-gray-100 py-5 md:py-8">
-      <div id="services" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+    <section className="bg-gradient-to-b from-white to-gray-100 py-5 md:py-2 w-full">
+      <div id="services" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-1">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-[#405546] sm:text-5xl md:text-6xl">
             Consis Consultoria
@@ -14,7 +14,7 @@ export default function MainSection() {
           </p>
         </div>
 
-        <div  className="mt-10">
+        {/* <div  className="mt-10">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
@@ -33,7 +33,7 @@ export default function MainSection() {
             Ver todos os serviços
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   )
