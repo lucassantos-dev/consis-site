@@ -22,9 +22,9 @@ export default function Footer() {
                     </span>
                   </li>
                   <li>
-                    <span className="text-base text-white hover:text-white cursor-pointer">
+                    {/* <span className="text-base text-white hover:text-white cursor-pointer">
                       Vagas
-                    </span>
+                    </span> */}
                   </li>
                 </ul>
               </div>
@@ -37,9 +37,9 @@ export default function Footer() {
                     </Link> */}
                   </li>
                   <li>
-                    <span className="text-base text-white hover:text-white cursor-pointer">
+                    {/* <span className="text-base text-white hover:text-white cursor-pointer">
                       FAQ
-                    </span>
+                    </span> */}
                   </li>
                 </ul>
               </div>
