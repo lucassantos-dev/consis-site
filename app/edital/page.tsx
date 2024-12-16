@@ -26,7 +26,7 @@ export default function EditalPage() {
               {[
                 { name: "Edital Completo", size: "13.8 MB", link: '/Edital-001-2024.pdf' },
                 { name: "Aditivo - 001 2024", size: "668 KB", link: '/Aditivo-001-2024-processo-seletivo-para-agente-comunitário-de-saúde-ACS-e-ACE.pdf' },
-                { name: "Resultado Preliminar Isenção Seleção", size: "188 KB", link: '/Aditivo-001-2024-processo-seletivo-para-agente-comunitário-de-saúde-ACS-e-ACE.pdf' },
+                { name: "Resultado Preliminar Isenção Seleção", size: "188 KB", link: '/Resultado-Preliminar-Isenção-Seleção.pdf' },
               ].map((doc, index) => (
                 <div
                   key={index}
