@@ -24,8 +24,9 @@ export default function EditalPage() {
             </h3>
             <div className="space-y-4">
               {[
-                { name: "Edital Completo", size: "13.8 MB" },
-                { name: "Aditivo - 001 2024", size: "668 KB" },
+                { name: "Edital Completo", size: "13.8 MB", link: '/Edital-001-2024.pdf' },
+                { name: "Aditivo - 001 2024", size: "668 KB", link: '/Aditivo-001-2024-processo-seletivo-para-agente-comunitário-de-saúde-ACS-e-ACE.pdf' },
+                { name: "Resultado Preliminar Isenção Seleção", size: "188 KB", link: '/Aditivo-001-2024-processo-seletivo-para-agente-comunitário-de-saúde-ACS-e-ACE.pdf' },
               ].map((doc, index) => (
                 <div
                   key={index}
@@ -38,7 +39,7 @@ export default function EditalPage() {
                   <div className="flex items-center space-x-4">
                     <span className="text-sm text-gray-500">{doc.size}</span>
                     <Link
-                      href="/Edital-001-2024.pdf"
+                      href={doc.link}
                       className="px-4 py-2 text-sm border border-[#405546] text-[#405546] rounded-md hover:bg-[#405546] hover:text-white transition-colors"
                     >
                       Download
