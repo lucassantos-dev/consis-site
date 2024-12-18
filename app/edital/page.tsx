@@ -72,39 +72,43 @@ export default function EditalPage() {
           </div>
 
           {/* Documents Section */}
-          <Card className="p-6">
-            <h3 className="text-[#405546] text-xl font-semibold mb-4">
-              Documentos do Edital
-            </h3>
-            <div className="space-y-4">
-              {[
-                { name: "Edital Completo", size: "13.8 MB", link: '/Edital-001-2024.pdf' },
-                { name: "Aditivo - 001 2024", size: "668 KB", link: '/Aditivo-001-2024-processo-seletivo-para-agente-comunitário-de-saúde-ACS-e-ACE.pdf' },
-                { name: "Resultado Preliminar Isenção Seleção", size: "188 KB", link: '/Resultado-Preliminar-Isenção-Seleção.pdf' },
-              ].map((doc, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50"
-                >
-                  <div className="flex items-center space-x-3">
-                    <FileText className="h-5 w-5 text-[#405546]" />
-                    <span className="text-[#405546]">{doc.name}</span>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <span className="text-sm text-gray-500">{doc.size}</span>
-                    <Link
-                      href={doc.link}
-                      className="px-4 py-2 text-sm border border-[#405546] text-[#405546] rounded-md hover:bg-[#405546] hover:text-white transition-colors"
-                    >
-                      Download
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Card>
-
-     
+          {/* Documents Section */}
+<Card className="p-6">
+  <h3 className="text-[#405546] text-xl font-semibold mb-4">
+    Documentos do Edital
+  </h3>
+  <div className="space-y-4">
+    {[
+      { name: "Edital Completo", size: "13.8 MB", link: '/Edital-001-2024.pdf' },
+      { name: "Aditivo - 001 2024", size: "668 KB", link: '/Aditivo-001-2024-processo-seletivo-para-agente-comunitário-de-saúde-ACS-e-ACE.pdf' },
+      { name: "Resultado Preliminar Isenção Seleção", size: "188 KB", link: '/Resultado-Preliminar-Isenção-Seleção.pdf' },
+      { name: "Publicação resultado candidatos pagos ace e acs - 18-12-2024", size: "166 KB", link: '/Publicação resultado candidatos pagos ace e acs 18.12.pdf' },
+      { name: "Resultado concorrência para vaga PCD seleção 2024 - 18-12-2024", size: "188 KB", link: '/Resultado concorrência para vaga PCD seleção 2024.pdf' },
+      { name: "ACE ACS", size: "131 KB", link: '/ACE ACS.pdf' },
+    ].map((doc, index) => (
+      <div
+        key={index}
+        className="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50"
+      >
+        <div className="flex items-center space-x-3">
+          <FileText className="h-5 w-5 text-[#405546]" />
+          <span className={`text-[#405546] ${index >= 3 ? 'font-bold' : ''}`}>
+            {doc.name}
+          </span>
+        </div>
+        <div className="flex items-center space-x-4">
+          <span className="text-sm text-gray-500">{doc.size}</span>
+          <Link
+            href={doc.link}
+            className="px-4 py-2 text-sm border border-[#405546] text-[#405546] rounded-md hover:bg-[#405546] hover:text-white transition-colors"
+          >
+            Download
+          </Link>
+        </div>
+      </div>
+    ))}
+  </div>
+</Card>
 
           {/* Important Information */}
           <Card className="p-6">
